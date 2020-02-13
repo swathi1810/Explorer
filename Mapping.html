@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Lifelong Learning</title>
+  <!-- this meta name is to identify website version in JSBin -->
+  <meta name="description" content="3.3.2">
+  <link media="screen" href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="print.css" type="text/css" media="print" />
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  </head>
+<body>
+  <div class="container">
+ <div id="menu">
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a class="active" href="#Mapping">Elements</a></li>
+ <li><a href="resource.html">Gallery</a></li>
+ <li><a href="Contribute.html">Contribute</a></li>
+ </ul>
+ </div>
+ </div>
+ <div id="learning">
+  <!--Main body of the page starts here-->
+ </div>
+ <!--Main body of the page starts here-->
+ <div id="transbox1">
+ <!-- This is my heading for my introductory paragraph -->
+  <p><h4>The 3Ls of Learning!!</h4></p>
+   <div class="subdiv">
+  <!----using image map ------>
+  <img src="tanmayvora-tedx-selfdirectedlearning.png" alt="Mapping!" width="968" height="768" usemap="#3lmap">
+  <map name="#3lmap">
+  <area href="http://qaspire.com/2019/01/16/3ls-of-self-directed-learning-insights-from-my-tedx-talk/" target="_blank" shape="rect" coords="85 27 903 96" alt="The 3Ls" title="The 3Ls">
+  <area href="https://www.gettingsmart.com/2017/01/10-reasons-why-lifelong-learning-is-the-only-option/" target="_blank" shape="rect" coords="336 132 781 198" alt="Why Lifelong Learning??" title="Why Lifelong Learning??">
+  <area href="https://www.insidehighered.com/news/2018/07/24/study-creating-your-passions-more-effective-finding-them" target="_blank" shape="rect" coords="531 391 811 468" alt="Create passion!!" title="Create passion!!">
+  <area href="https://medium.com/swlh/designing-personal-curricula-for-lifelong-learning-9f2b2d21b893" target="_blank" shape="rect" coords="37 395 298 474" alt="Personal curricula" title="Personal curricula">
+  <area href="https://www.youtube.com/watch?v=39rIebbXshA" target="_blank" shape="react" coords="301 354 544 545" alt="Get inspired!" title="Get inspired!">
+  </map>
+  </div>
+  </div>
+<script>
+var text = ["Hello!","Namste!","Bonjour!","Hola!","Welcome to my Page!", "Let's revive the joy of Learning!"];
+var counter = 0;
+var elem = document.getElementById("learning");
+var inst = setInterval(change, 1000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+  }
+}
+</script>
+<footer>
+<div id="quote">
+<p>“Learning is not attained by chance, it must be sought for with ardor and attended to with dilligence.” ―Abigail Adams</p>
+</div>
+<div id="share">
+<div>
+  <ul>
+    <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Hi! What do you think??" data-url="https://www.gettingsmart.com/2017/01/10-reasons-why-lifelong-learning-is-the-only-option/" data-hashtags="#lifelonglearning" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+    <li><div class="fb-share-button" data-href="https://www.gettingsmart.com/2017/01/10-reasons-why-lifelong-learning-is-the-only-option/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gettingsmart.com%2F2017%2F01%2F10-reasons-why-lifelong-learning-is-the-only-option%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div></li>
+    <li><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/Share" data-url="https://www.gettingsmart.com/2017/01/10-reasons-why-lifelong-learning-is-the-only-option/"></script></li>
+    <li>
+      <p>👋</p>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+</footer>
+</body>
+</html>

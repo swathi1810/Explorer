@@ -1,0 +1,27 @@
+footer,#quote,#share,#menu,.card,#learning,.container_inner,.main_container{
+	display:none !important;
+}
+
+#transbox{
+	height:1400px;
+	margin-left:8px;
+	font-size: 15px;
+}
+#transbox1{
+	height:200px;
+	margin-left:8px;
+	font-size: 15px;
+}
+#subdiv img{
+	width:968px;
+	height:500px;
+}
+img{
+	width:300px;
+	height:300px;
+}
+
+	
+
+
+	

@@ -1,0 +1,61 @@
+https://theoatmeal.com/comics/creativity  creativity_big.png
+https://www.thebalancecareers.com/problem-solving-skills-with-examples-2063764 problem-solving-skills-with-examples-2063764_Final-5c532ffbc9e77c000102b65a.png
+https://sites.google.com/site/profhbutler/research/ct CT3.png
+https://vativehealthcare.com.au/our-services/leadership-programs/ leadership-cloud-1
+https://www.communicationmatters.org.uk/ CAUK_Symbol.png
+https://seapointcenter.com/what-is-collaboration/ Collaboration-Mindset.jpg
+https://blog.scielo.org/en/2015/05/18/dealing-with-information-overload/#.XMOxdugzY2w sobrecarga.png
+https://social.eyeforpharma.com/column/adaptability-using-change-competitive-advantage adaptability.jpg
+https://medium.com/@chadbockius/life-lessons-on-curiosity-5d1db1f71b06 curious.jpg
+http://emintsclassroomstrategies.blogspot.com/2012/07/why-reflect.html 
+Ammukutty@12a,
+ 
+ https://piazza.com/class/jse71unqdna9r?cid=771
+ http://qaspire.com/2019/01/16/3ls-of-self-directed-learning-insights-from-my-tedx-talk/ 
+ 
+ 
+ #menu ul {
+  list-style-type: none;
+  margin: 12px;
+  padding: 9px;
+  overflow: hidden;
+  background-color:transparent;
+  opacity: 1.9;
+   position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+   background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.2); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 780px; /* Full width */
+  padding: 20px; /* Some padding */
+  
+}
+
+#menu li {
+  float: left;
+}
+
+ #menu a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight:bold;
+  font-family:Mistral,French Script MT;
+  font-size:28px;
+}
+/*In order to show the user where are they currently in the site, element hover has been used*/
+ #menu a:hover:not(.active) {
+  text-color:black;
+  background-color:#ffffff;
+  filter:alpha(opacity=90);
+  
+}
+/*the active menu item is indicated with a particular color */
+ #menu a.active {
+  background-color:white;
+}
+
+
+#f2f2f2

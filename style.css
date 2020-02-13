@@ -1,0 +1,607 @@
+/*Background detail*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+	  background-image:url(blur-book-stack-books-590493.jpg);
+      background-size: cover;
+      }
+
+/* Different header styles*/
+h1   {color:black;
+      font-weight: bold;
+      font-size: 28px
+	 
+	  }
+	h2{
+		color:#99003d;
+		font-weight:bold;
+		font-size:28px;
+		text-align:center
+	}
+
+h3   {color:black;
+      font-weight: bold;
+	  font-family:Mistral,"French Script MT","Comic Sans",Calibri;
+      font-size: 50px}
+h4{
+	color:#99003d;
+	font-weight:bold;
+	font-family:comic-Sans;
+	font-style:italic;
+	font-size:25px;
+}
+/*.container {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-width:180px;
+  min-height: 90px;
+  margin-left:0px;
+  margin-top:0px;
+}*/
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 260px;
+  max-height:750px;
+  margin: auto;
+  text-align: center;
+  bottom:1380px;
+  left:470px;
+  position:relative;
+  background-color:transparent;
+  opacity:.9;
+  border-radius:6px;
+  
+}
+
+ .title {
+  color:#99003d;
+  font-size:20px;
+  font-weight:bold
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}	
+/*Contents of the site are placed in this transparent box*/	  
+#transbox{
+	width: 870px;
+    height: 1300px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 6px;
+	margin-left:20px;
+	margin-right:auto;
+	margin-bottom:80px;
+	margin-top:100px;
+    background-color: #ffffff;
+    border: 0.5px solid black;
+    opacity: 0.8;
+    /*filter: alpha(opacity=60);*/
+	min-height:100px;
+	overflow:auto;
+	max-width:1000px;
+	/*position:obsolute;*/
+}
+#transbox1{
+	width: 1070px;
+    height: 990px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 6px;
+	margin-left:20px;
+	margin-right:auto;
+	margin-bottom:80px;
+	margin-top:100px;
+    background-color: #ffffff;
+    border: 0.5px solid black;
+    opacity: 0.8;
+    /*filter: alpha(opacity=60);*/
+	min-height:100px;
+	overflow:auto;
+	max-width:1000px;
+	/*position:obsolute;*/
+}
+/*To change the alignment of the content in the box , this has been branched out*/
+#subdiv {
+	text-align:left;
+	font-weight:bold;
+	padding-left:10px;
+	padding-right:5px;
+	font-family:"Comic Sans",Calibri;
+	color:black;
+	line-height:1.6;
+	font-size:18px;
+	top:50%;
+	margin-top:4em;
+	/*font-style:italic;*/	
+
+}
+#insidediv{
+	width:550px;
+	height:500px;
+	top:40%;
+	margin:0 auto;
+	opacity: .9;
+    /*filter: alpha(opacity=60);*/
+}
+footer{
+      color:black;
+      font-weight: bold;
+	  font-family:Mistral,"French Script MT";
+      font-size: 60px;
+	  text-align:center;
+	  background-color:#f2f2f2;
+	  opacity:.5;
+	  padding:0px;
+	  height:120px;
+	  display:inline-block;
+}
+#quote{
+	float:left;
+	text-align:left;
+	width:1290px;
+	height:50px;
+	font-size:24px;
+	margin-left:30px;
+	margin-top:15px;
+	font-weight: bold;
+	font-family:Mistral,"French Script MT";
+	color:black;
+	max-width:40%;
+	
+}
+#share{
+  height: 100vh;
+  width: 100%;
+	float:right;
+	margin-top:40px;
+	margin-right:10px;
+	text-align:left;
+	width:550px;
+	height:100px;
+	font-size:20px;
+    line-height: 1;	
+ 	font-weight: bold;
+	font-family:"Comic Sans",Calibri;
+	color:#99003d;
+	max-width:40%;
+	
+}
+#contact{
+	text-align:left;
+	font-weight: bold;
+	width:400px;
+	height:50px;
+	font-size:19px;
+	display:inline-block;
+	font-family:"Comic Sans",Calibri;
+	color:#99003d;
+  justify-content: center;
+  display:inline-flex;
+  margin-left:500px
+	
+}
+
+
+#contact a {
+  padding: 0px 10px;
+}
+
+#contact a:nth-child(1) {
+  color: #4867AA;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+
+#contact a:nth-child(1):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0px, -8px);
+}
+
+#contact a:nth-child(2) {
+  color: #1DA1F2;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+
+#contact a:nth-child(2):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0px, -8px);
+}
+
+#contact a:nth-child(3) {
+  color: #444;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out 150ms;
+}
+
+#contact a:nth-child(3):hover {
+  margin-top: -10px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+  transform: translate(0px, -5px);
+}
+#contact a:nth-child(4) {
+  color: #fffc00;
+  cursor: pointer;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 150ms;
+}
+#contact a:nth-child(4):hover {
+  margin-top: -10px;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0px, -8px);
+}
+#share li p{
+	margin-top:5px;
+}
+#share ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 31px;
+  justify-items: center;
+  margin: auto;
+  list-style: none;
+
+}
+
+@media (min-width: 500px) {
+#share ul {
+    grid-auto-flow: column;
+  }
+}
+
+#share a {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+
+#share a:hover {
+  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+#share li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#share li:hover ~ li p {
+  animation: wave-animation 0.3s infinite;
+}
+
+/* below is just for demo styling */
+
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
+
+/*all the pics are centrally aligned*/
+/*#mypic{
+	float:center;
+}*/
+/*All the menu items have certain degree of opacity*/ 
+/*All the menu items have certain degree of opacity*/ 
+#menu ul {
+  list-style-type: none;
+  margin: 12px;
+  padding: 12px;
+  overflow: hidden;
+  background-color:transparent;
+  opacity: 0.9;
+  
+}
+
+#menu li {
+  float: left;
+}
+
+#menu a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight:bold;
+  font-family:Mistral,"French Script MT";
+  font-size:28px;
+}
+#learning {
+	  color:black;
+      font-weight: bold;
+	  font-family:Mistral,"French Script MT";
+      font-size: 60px;
+	  text-align:center;
+	  background-color:#f2f2f2;
+	  opacity:.5
+	  
+	}
+	
+/*In order to show the user where are they currently in the site, element hover has been used*/
+#menu a:hover:not(.active) {
+  background-color:#ffffff;
+  /*filter:alpha(opacity=90);*/
+  
+}
+/*the active menu item is indicated with a particular color */
+#menu a.active {
+  background-color:white;
+}
+
+#form{
+	font-weight:bold;
+	font-family:"Comic Sans",Calibri;
+	font-style:italic;
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 7px 12px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width:100%;
+  height:100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+ .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+   width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  /*-webkit-user-select: none;*/
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/10 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo{
+  opacity: 0.6;
+  
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*Transparent container for text over the images*/
+.caption-container {
+  position: relative; 
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; 
+  padding:0px
+}
+
+.caption-container .content {
+  position: absolute; 
+  text-align:left;/* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.4 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+.main_container {
+  height: 46px;
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  max-width: 300px;
+  background-color:transparent;
+  opacity:.8;
+  align-content: center;
+  position:relative;
+  left:940px;
+  bottom:1380px;
+}
+ #id_main_container1 {
+  height: 46px;
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  max-width: 300px;
+  background-color:transparent;
+  opacity:.9;
+  align-content: center;
+}
+.container_inner {
+  height: auto;
+  border: none;
+  background-color:transparent;
+  opacity:0.9;
+  max-width: 290px;
+  vertical-align: center;
+  /*padding-top: 12px;
+  padding-left: 10px;*/
+  align-content: center;
+  position:relative;
+  left:1070px;
+  bottom:60px
+}
+ .num_tiles {
+  width:30px;
+  height: 30px;
+  background-color:black;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  line-height: 20px;
+  padding: 3px;
+  margin: 1.5px;
+  font-family: verdana;
+  vertical-align: center;
+}
+
+#text{
+display:none;
+}
+#stage a:active{
+  color:#ffd323;
+}
+button{
+  user-select:none;
+  /*-webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;*/
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color:white;
+  font-family:cursive;
+  box-sizing:border-box;
+}
+
+
+	
+
+

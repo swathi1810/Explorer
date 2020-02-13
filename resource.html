@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Me and My Passion</title>
+  <meta name="description" content="3.3.2">
+  <link media="screen" href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="print.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+<body>
+  <div class="container">
+ <div id="menu">
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="Mapping.html">Elements</a></li>
+ <li><a class="active" href="#resource">Gallery</a></li>
+ <li><a href="Contribute.html">Contribute</a></li>
+ </ul>
+ </div>
+ </div>
+  <div id="learning">
+  <!--Main body of the page starts here-->
+ </div>
+
+ <div id="transbox">
+ <h4>Continous Learning ..how??</h4>
+ <div id="subdiv">
+   <div id="insidediv">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+<script>
+function wordCloud(selector) {
+
+    var fill = d3.scale.category20();
+
+    //Construct the word cloud's SVG element
+    var svg = d3.select(selector).append("svg")
+        .attr("width", 500)
+        .attr("height", 500)
+        .append("g")
+        .attr("transform", "translate(250,250)");
+    function draw(words) {
+        var cloud = svg.selectAll("g text")
+                        .data(words, function(d) { return d.text; })
+
+        //Entering words
+        cloud.enter()
+            .append("text")
+            .style("font-family", "Impact")
+            .style("fill", function(d, i) { return fill(i); })
+            .attr("text-anchor", "middle")
+            .attr('font-size', 1)
+            .text(function(d) { return d.text; });
+
+        //Entering and existing words
+        cloud
+            .transition()
+                .duration(600)
+                .style("font-size", function(d) { return d.size + "px"; })
+                .attr("transform", function(d) {
+                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .style("fill-opacity", 1);
+
+        //Exiting words
+        cloud.exit()
+            .transition()
+                .duration(200)
+                .style('fill-opacity', 1e-6)
+                .attr('font-size', 1)
+                .remove();
+    }
+
+
+    //Use the module pattern to encapsulate the visualisation code. We'll
+    // expose only the parts that need to be public.
+    return {
+
+        //Recompute the word cloud for a new set of words. This method will
+        // asycnhronously call draw when the layout has been computed.
+        //The outside world will need to call this function, so make it part
+        // of the wordCloud return value.
+        update: function(words) {
+            d3.layout.cloud().size([500, 500])
+                .words(words)
+                .padding(5)
+                .rotate(function() { return ~~(Math.random() * 2) * 90; })
+                .font("Impact")
+                .fontSize(function(d) { return d.size; })
+                .on("end", draw)
+                .start();
+        }
+    }
+
+}
+
+var words = [
+    "Bitcoin racketeering DACA Good Friday Prince Harry's last name Fortnite duck-boat Yann-Laurel nationalist Avicii Mac-Miller Stan-Lee Stephen-Hawking American comic book writer editor publisher and producer theoretical physicist cosmologist and author who was director of research at the Centre for Theoretical Cosmology at the University of Cambridge at the time of his death",
+    "listeria ligma hazing mud room capital of California Diwali ball tampering health record World Cup in Australia win Powerball delete Instagram How to lose weight fast  screenshot on iPhone X How to delete Facebook How to lose belly fat ",
+	"News World-Cup Hurricane-Florence Mega-Millions Election-Results Hurricane-Michael Kavanaugh-Confirmation Florida-Shooting Royal-Wedding Olympic-Medal-Count Government-Shutdown"
+]
+function getWords(i) {
+    return words[i]
+            .replace(/[!\.,:;\?]/g, '')
+            .split(' ')
+            .map(function(d) {
+                return {text: d, size: 10 + Math.random() * 60};
+            })
+}
+function showNewWords(vis, i) {
+    i = i || 0;
+
+    vis.update(getWords(i ++ % words.length))
+    setTimeout(function() { showNewWords(vis, i + 1)}, 6000)
+}
+var myWordCloud = wordCloud( '#insidediv');
+showNewWords(myWordCloud);
+</script>
+ 
+</div>
+
+ <p>The displayed word cloud shows some of the most trending words from <a href="https://trends.google.com/trends/?geo=US" target="_blank">Google search</a>. In this digitalized world,everyone relies on information of this kind every single day.It may be that some information
+may be just for recreational purposes but others may play vital role for effective accomplishment of endeavors in this era of lifelong learning.However one problem relying completely on internet sources is that anyone who has now accessibility to internet 
+can publish content for others.This means that there is a lot of bad information to sort through when planning to make use of it. It’s not always easy to determine which are credible, peer-reviewed sources, and which are not.Thus Information literacy or Information Management has a strong correlation with LifeLongLearning</p>
+ <h2>Lifelong learning ...an "ongoing,voluntary and self motivated" pursuit of knowledge</h2>
+ <p>The list pertaining the benefits of lifelong learning can be broad and diverse which also means the skills that one must have to learn can also be
+ diverse and broad...These skills can transform our future for the better because they come from what is best in us
+ <p>But below are some of most talked,valued and versatile learning skills that motivates continous learning in a person..</p>
+ <h2>Top Ten Skills</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="creativity_big.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="problem-solving-skills-with-examples-2063764_Final-5c532ffbc9e77c000102b65a.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="CT3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="leadership-cloud-1.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="CAUK_Symbol.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="Collaboration-Mindset.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="sobrecarga.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="adaptability.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="curious.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="reflection cycle.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+</div>
+</div>
+</div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="creativity_big.png" style="width:100%">
+	  <div class="caption-container">
+	  <div class="content">
+	  <h1>Creativity</h1>
+    <p> Crreativity is a common language that we can all learn to communicate our passions and ideas with..</p>
+	</div>
+</div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="problem-solving-skills-with-examples-2063764_Final-5c532ffbc9e77c000102b65a.png" style="width:100%">
+	   <div class="caption-container">
+	  <div class="content">
+	  <h1>Problem Solving</h1>
+    <p>Problem solving skills helps to define a problem, design an appropriate solution, and put it to effective use.</p>
+	</div>
+</div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="CT3.png" style="width:100%">
+	  	   <div class="caption-container">
+	  <div class="content">
+	  <h1>Critical Thinking</h1>
+    <p>The way we think about the world, ourselves, and each other affects more than just personal experience. It has a part in defining the future of everything and everyone and the entire world—this is the "Ripple Effect."</p>
+	</div>
+</div>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="leadership-cloud-1.png" style="width:100%">
+	  	   <div class="caption-container">
+	  <div class="content">
+	  <h1>Leadership</h1>
+    <p>Anyone whose attitude moves from "I can do it" to "we can do it" makes everything better. It's their independence and willingness to take responsibility for making good things happen, not just simply getting things done</p>
+	</div>
+</div>
+    </div>
+	 <div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+      <img src="CAUK_Symbol.png" style="width:100%">
+	  <div class="caption-container">
+	  <div class="content">
+	  <h1>Commuincation</h1>
+    <p>Knowledge commuinication helps with interactively conveying and co-constructing insights, assessments, experiences, or skills through verbal and non-verbal means</p>
+	</div>
+</div>
+    </div>
+	 <div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+      <img src="Collaboration-Mindset.jpg" style="width:100%">
+	   <div class="caption-container">
+	  <div class="content">
+	  <h1>Collaboration</h1>
+    <p>Collaboration brings people with different backgrounds, skills, expertise, and perspectives together to brainstorm ideas, overcome obstacles, and utilize creative problem solving.</p>
+	</div>
+</div>
+    </div>
+	 <div class="mySlides">
+      <div class="numbertext">7 / 10</div>
+      <img src="sobrecarga.png" style="width:100%">
+	   <div class="caption-container">
+	  <div class="content">
+	  <h1>Information Management</h1>
+    <p>Dealing with information means we can determine what is valuable and discard what is spurious or questionable. This is important while looking for questions and solutions that are genuine and useful.</p>
+	</div>
+</div>
+    </div>
+	 <div class="mySlides">
+      <div class="numbertext">8 / 10</div>
+      <img src="adaptability.jpg" style="width:100%">
+	   <div class="caption-container">
+	  <div class="content">
+	  <h1>Adaptability</h1>
+    <p>Being able to adapt to change in all its forms keeps us constantly prepared to survive and succeed no matter what climate we're in.</p>
+	</div>
+</div>
+    </div>
+	 <div class="mySlides">
+      <div class="numbertext">9 / 10</div>
+      <img src="curious.jpg" style="width:100%">
+	   <div class="caption-container">
+	  <div class="content">
+	  <h1>Curiosity</h1>
+    <p>Lifelong learning is driven by curiosity.Without curiosity there is no learning. Nurturing curiosity can lead to moments where a learner says, "wow, I never expected that".</p>
+	</div>
+</div>
+    </div>
+	 <div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="reflection cycle.jpg" style="width:100%">
+	   <div class="caption-container">
+	  <div class="content">
+	  <h1>Refelection</h1>
+    <p>If we are going to place our attention on learning something we must consider the merits of learning it before, during, and after the learning happens. Otherwise, we have engaged in empty learning for no reason.</p>
+	</div>
+</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+     <div class="row">
+     <div class="column">
+      <img class="demo cursor" src="creativity_big.png" style="width:100%" onclick="currentSlide(1)" alt="Creativity">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="problem-solving-skills-with-examples-2063764_Final-5c532ffbc9e77c000102b65a.png" style="width:100%" onclick="currentSlide(2)" alt="Problem Solving">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="CT3.png" style="width:100%" onclick="currentSlide(3)" alt="Critical Thinking">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="leadership-cloud-1.png" style="width:100%" onclick="currentSlide(4)" alt="Leadership">
+    </div>
+	</div>
+	<div class="row">
+	<div class="column">
+      <img class="demo cursor" src="CAUK_Symbol.png" style="width:100%" onclick="currentSlide(5)" alt="Commuinication">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="Collaboration-Mindset.jpg" style="width:100%" onclick="currentSlide(6)" alt="Collaboration">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="sobrecarga.png" style="width:100%" onclick="currentSlide(7)" alt="Information Management">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="adaptability.jpg" style="width:100%" onclick="currentSlide(8)" alt="Adaptability">
+    </div>
+	</div>
+	<div class="row">
+	<div class="column">
+      <img class="demo cursor" src="curious.jpg" style="width:100%" onclick="currentSlide(9)" alt="Curiosity">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="reflection cycle.jpg" style="width:100%" onclick="currentSlide(10)" alt="Refelection">
+    </div>
+	</div>
+  </div>
+</div>
+
+
+<div class="main_container" id="id_main_container">
+ <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="124350/"></script>
+  </div>
+<script>
+<!---Func which opens the model box-->
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+<!---Closes the model-->
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+<!---function responsible for slideshow---->
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<!---Javascript to change the title of the page at regular interval--->
+<script>
+var text = ["Hello!","Namste!","Bonjour!","Hola!","Welcome to my Page!", "Let's revive the joy of Learning!"];
+var counter = 0;
+var elem = document.getElementById("learning");
+var inst = setInterval(change, 1000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+  }
+}
+</script>
+<footer>
+<div id="quote">
+<p>“Learning is not attained by chance, it must be sought for with ardor and attended to with dilligence.” ―Abigail Adams</p>
+</div>
+<div id="share">
+<div>
+  <ul>
+    <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Hi! What do you think??" data-url="https://www.gettingsmart.com/2017/01/10-reasons-why-lifelong-learning-is-the-only-option/" data-hashtags="#lifelonglearning" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+    <li><div class="fb-share-button" data-href="https://www.gettingsmart.com/2017/01/10-reasons-why-lifelong-learning-is-the-only-option/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.gettingsmart.com%2F2017%2F01%2F10-reasons-why-lifelong-learning-is-the-only-option%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div></li>
+    <li><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/Share" data-url="https://www.gettingsmart.com/2017/01/10-reasons-why-lifelong-learning-is-the-only-option/"></script></li>
+    <li>
+      <p>👋</p>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+</footer>
+
+
+ </body>
+ </html>
